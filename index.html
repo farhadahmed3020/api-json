@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2> Javascript Object Notation</h2>
+
+    <script>
+
+        const user = {
+            id: 245 , 
+            name : "Evan Ahmed",
+            age:21,
+            lover:{
+                name: "Eva",
+                favFood:"pizza",
+                age:20,
+           },
+           friendsAge :[22,21,24],
+           friendsName: ["kamal" ,"Jamal" ,"Damal"],
+           };
+        // object convert to JSON data //
+        //  JSON Data {"id":245,"name":"Evan Ahmed"}
+        
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        // JSON Data convert to Object Data //
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>
